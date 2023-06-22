@@ -148,8 +148,18 @@ function DegerlendirmeEkle(degerlendirmeler, isim, puan, geribildirim) {
 	Örnek: AnahtardanDegerlendirmeAl(degerlendirmeler,0) şunu döndürmeli: "Nalan isimli kişi 5 puan verdi ve şunları yazdı: Mükemmel atmosfer ve mükemmel vegan seçenekleri!"
 */
 
-function AnahtardanDegerlendirmeAl(/*Kodlar buraya*/) {
-  /*Kodlar buraya*/
+function AnahtardanDegerlendirmeAl(dizi1, i) /*Kodlar buraya*/ {
+  if (i < dizi1.length) {
+    const sonuc =
+      dizi1[i].isim +
+      " isimli kişi " +
+      dizi1[i].puan +
+      " puan verdi ve şunları yazdı: " +
+      dizi1[i].geribildirim;
+    return sonuc;
+
+    /*Kodlar buraya*/
+  }
 }
 
 /*  Görev 7:  
@@ -164,7 +174,17 @@ function AnahtardanDegerlendirmeAl(/*Kodlar buraya*/) {
 	Not: Eğer 4. görevi başarıyla yaptıysanız kişinin geribildirimi boş görünmemeli
 */
 
-function SonDegerlendirmeyiAl(/*Kodlar buraya*/) {
+function SonDegerlendirmeyiAl(dizi /*Kodlar buraya*/) {
+  let i = dizi.length - 1;
+
+  const sonuc =
+    dizi[i].isim +
+    " isimli kişi " +
+    dizi[i].puan +
+    " puan verdi ve şunları yazdı: " +
+    dizi[i].geribildirim;
+  return sonuc;
+
   /*Kodlar buraya*/
 }
 
